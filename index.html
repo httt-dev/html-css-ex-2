@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA_Compatible" content="ie=edge" />
+  <title>Bài tập 2</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- 1. Tạo ra 6 buttons với kiến thức đã học, và có gradient đẹp như hình, có thể sử dụng BEM như `btn btn--green` chẳng hạn, 
+  trong các buttons này đều có `box-shadow` tương ứng với màu gradient luôn nên 
+  chú ý nhé: https://assets.materialup.com/uploads/cc065902-1545-4f0f-adc3-b9344a4f0a56/preview.png -->
+  <div class="grad">
+    <div class="grad__text grad__text--small">
+      Gradient
+    </div>
+    <div class="grad__text grad__text--large">
+      Buttons
+    </div>
+    <div>
+      <button class="btn btn--success">Success</button>
+      <button class="btn btn--info">Information</button>
+      <button class="btn btn--buy">Buy now</button>
+    </div>
+    <div>
+      <button class="btn btn--warning">Warning</button>
+      <button class="btn btn--contact">Contact</button>
+      <button class="btn btn--del">Delete</button>
+    </div>
+  </div>
+
+  <!-- 2.Tạo ra text gradient đơn giản như hình: https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2015/02/TextFill_image6.png -->
+  <div class="grad">
+    <div class="grad__text grad__text--small">
+      Gradient
+    </div>
+    <div class="grad__text grad__text--large">
+      Text
+    </div>
+    <div class="text-gradient">
+      text
+    </div>
+  </div>
+  <!-- 3.Sử dụng CSS về child hoặc type để làm các màu như hình, chỉ làm chỗ các màu thôi nhé, từ chỗ "Typography" trở xuống bỏ đi, ví dụ color__item:first-child{background-color:red}: https://cdn.dribbble.com/users/757683/screenshots/5942067/attachments/1281258/style_02.jpg -->
+  <div class="colors">
+
+    <div class="color-item">
+      <div class="color-item__square"></div>
+      <p class="color-item__hex">#A24BF0</p>
+      <p class="color-item__name">Purple</p>
+    </div>
+
+    <div class="color-item">
+      <div class="color-item__square"></div>
+      <p class="color-item__hex">#A24BF0</p>
+      <p class="color-item__name">Neon_Teal</p>
+    </div>
+
+    <div class="color-item">
+      <div class="color-item__square"></div>
+      <p class="color-item__hex">#25c2e3</p>
+      <p class="color-item__name">SkyBlue</p>
+    </div>
+
+    <div class="color-item">
+      <div class="color-item__square"></div>
+      <p class="color-item__hex">#ea344f</p>
+      <p class="color-item__name">Red</p>
+    </div>
+
+    <div class="color-item">
+      <div class="color-item__square"></div>
+      <p class="color-item__hex">#dd44a7</p>
+      <p class="color-item__name">Pink</p>
+    </div>
+
+    <div class="color-item">
+      <div class="color-item__square"></div>
+      <p class="color-item__hex">#f7ac2a</p>
+      <p class="color-item__name">Yellow</p>
+    </div>
+
+    <div class="color-item">
+      <div class="color-item__square"></div>
+      <p class="color-item__hex">#000000</p>
+      <p class="color-item__name">Black</p>
+    </div>
+
+    <div class="color-item">
+      <div class="color-item__square"></div>
+      <p class="color-item__hex">#555555</p>
+      <p class="color-item__name">Assphalt</p>
+    </div>
+
+    <div class="color-item">
+      <div class="color-item__square"></div>
+      <p class="color-item__hex">#888888</p>
+      <p class="color-item__name">Dirt</p>
+    </div>
+
+    <div class="color-item">
+      <div class="color-item__square"></div>
+      <p class="color-item__hex">#d2d2d2</p>
+      <p class="color-item__name">Canmel_Skin</p>
+    </div>
+
+    <div class="color-item">
+      <div class="color-item__square"></div>
+      <p class="color-item__hex">#e8e8e8</p>
+      <p class="color-item__name">Dirty Snow</p>
+    </div>
+
+    <div class="color-item">
+      <div class="color-item__square"></div>
+      <p class="color-item__hex">#FCFCFC</p>
+      <p class="color-item__name">What?</p>
+    </div>
+  </div>
+
+  <!-- Sử dụng fontawesome để tạo ra ít nhất 10 icons bất kỳ, chỉ cần hiển thị ra web là được rồi. -->
+  <div class="font-icon-demo">
+    <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+
+    <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+
+    <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+
+    <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+
+    <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+
+    <i class="fa fa-camera-retro fa-3x"></i>
+    <i class="fa fa-home fa-3x"></i>
+    <i class="fa fa-book fa-3x"></i>
+    <i class="fa fa-pencil fa-3x"></i>
+    <i class="fa fa-check-square fa-3x"></i>
+  </div>
+
+  <div class="selectors">
+    <div data-link="https://google.com">https://google.com</div>
+    <div data-link="http://vnexpress.vn">http://facebook.com</div>
+    <div data-name="hello">hello</div>
+    <div data-name="againhello">again hello</div>
+    <input type="email" name="email">
+    <input type="text" name="fullname">
+  </div>
+</body>
+
+</html>

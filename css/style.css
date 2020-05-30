@@ -1,0 +1,202 @@
+
+:root {
+    --hover-color : orange;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  
+  *,
+  *:before,
+  *::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 5rem;
+    box-sizing: border-box;
+  }
+  .grad{
+    margin: 2rem;
+    text-align: center;
+  }
+  
+  .grad__text{
+    margin: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .grad__text--small{
+    font-size: 2rem;
+    color: gray;
+  }
+  
+  .grad__text--large{
+    font-size: xx-large;
+  }
+  
+  .btn{
+    cursor: pointer;
+    width: 24rem;
+    height: 6rem;
+    text-align: center;
+    outline: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    background-color: transparent;
+    border: 0;
+    text-transform: uppercase;
+    color: white;
+    margin: 6rem;
+    padding: 1.5rem;
+    border-radius: 0.6rem;
+    letter-spacing: .4rem;
+    box-sizing: border-box;
+    transition: 0.5s linear
+  }
+  .btn:hover{
+    background-image: linear-gradient(to right , #52A0FD , #00e2fa);
+    color: var(--hover-color) ;
+    transition: 0.6s linear
+  }
+  
+  .btn--success {
+    background-image: linear-gradient(to right , #68ecac , #4FCCC8);
+    box-shadow: 0 0.1rem 1.8rem 0 rgba(50, 196, 190, 0.75);
+  }
+  
+  .btn--info {
+    background-image: linear-gradient(to right , #ace4fe , #70b6ed);
+    box-shadow: 0 0.1rem 1.8rem 0 #8acdec;
+  }
+  
+  .btn--buy {
+    background-image: linear-gradient(to right , #afbdff , #ad8af2);
+    box-shadow: 0 0.1rem 1.8rem 0 #afb0ff;
+  }
+  
+  .btn--warning {
+    background-image: linear-gradient(to right , #ffd598 , #fca261);
+    box-shadow: 0 0.1rem 1.8rem 0 #ebca99;
+  }
+  .btn--contact {
+    background-image: linear-gradient(to right , #fcbea9 , #ed7171);
+    box-shadow: 0 0.1rem 1.8rem 0 #fcbea9;
+  }
+  .btn--del {
+    background-image: linear-gradient(to right , #ffa9b7 , #f5839c);
+    box-shadow: 0 0.1rem 1.8rem 0 #ffa9b7;
+  }
+  
+  .text-gradient{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 15rem;
+    background-image: linear-gradient(135deg,#ffd86a , #ff10a5);
+  }
+  @supports(-webkit-background-clip: text){
+    .text-gradient{
+      color: transparent;
+      -webkit-background-clip: text;
+    }
+  }
+  
+  .colors{
+    text-align: left;
+  }
+  
+  .color-item{
+    width: 18rem;
+    height: 18rem;
+    padding: 1rem;
+    display: inline-block;
+  }
+  
+  .color-item__square{
+    width: 80%;
+    height: 80%;
+  }
+  
+  .color-item:first-child .color-item__square{
+    background-color: #A24BF0;
+  }
+  
+  .color-item:nth-child(2) .color-item__square{
+    background-color: #38dbb2;
+  }
+  
+  .color-item:nth-child(3) .color-item__square{
+    background-color: #25C2E3;
+  }
+  .color-item:nth-child(4) .color-item__square{
+    background-color: #EA344F;
+  }
+  .color-item:nth-child(5) .color-item__square{
+    background-color: #DD44A7;
+  }
+  .color-item:nth-child(6) .color-item__square{
+    background-color: #F7AC2A;
+  }
+  .color-item:nth-child(7) .color-item__square{
+    background-color: #000000;
+  }
+  .color-item:nth-child(8) .color-item__square{
+    background-color: #555555;
+  }
+  .color-item:nth-child(9) .color-item__square{
+    background-color: #888888;
+  }
+  .color-item:nth-child(10) .color-item__square{
+    background-color: #D2D2D2;
+  }
+  .color-item:nth-child(11) .color-item__square{
+    background-color: #E8E8E8;
+  }
+  .color-item:last-child .color-item__square{
+    background-color: #FCFCFC;
+  }
+  
+  .color-item__hex{
+    padding-top: 1rem;
+    color: black;
+    font-size: 1.5rem;
+  }
+  
+  .color-item__name{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    color: gray;
+  }
+  
+  .font-icon-demo{
+    margin: 2rem;
+  
+  }
+  
+  .selectors{
+    font-size: 3rem;
+  }
+  /* chọn ra các thẻ div có data-link bắt đầu bằng https */
+  .selectors div[data-link^="https"]{
+    background-color: greenyellow;
+  }
+  /* Chọn ra các thẻ `div` có `data-link` kết thúc bằng `.vn` */
+  .selectors div[data-link$=".vn"]{
+    background-color: coral;
+  }
+  /* Chọn ra các thẻ `div` có `data-name` có chứa chữ `hello` */
+  .selectors div[data-name*="hello"]{
+    background-color: cyan;
+  }
+  /* Chọn ra `input` có `type` là email*/
+  .selectors input[type="email"]{
+    background-color: burlywood;
+  }
+  /* Chọn ra `input` có `name` là fullname */
+  .selectors input[name="fullname"]{
+    background-color: rgb(98, 151, 131);
+  }
+  
